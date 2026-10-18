@@ -6,28 +6,32 @@
     <meta
       name="description"
       content="Developer portfolio for Saleem Sultani featuring projects, skills, experience, and contact details."
+      id="pageDescription"
+      data-en-content="Developer portfolio for Saleem Sultani featuring projects, skills, experience, and contact details."
+      data-de-content="Entwickler-Portfolio von Saleem Sultani mit Projekten, Kenntnissen, Berufserfahrung und Kontakt."
     />
-    <title>Saleem Sultani | Full Stack Developer</title>
+    <title data-en="Saleem Sultani | Full Stack Developer" data-de="Saleem Sultani | Full-Stack-Entwickler">Saleem Sultani | Full Stack Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=responsive-1" />
   </head>
   <body>
     <header class="site-header">
       <div class="container nav">
         <a class="brand" href="#home">Saleem<span>.</span></a>
-        <nav class="nav-links" aria-label="Main navigation">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
+        <nav class="nav-links" aria-label="Main navigation" data-en-aria-label="Main navigation" data-de-aria-label="Hauptnavigation">
+          <a href="#about" data-en="About" data-de="Über mich">About</a>
+          <a href="#skills" data-en="Skills" data-de="Kenntnisse">Skills</a>
+          <a href="#projects" data-en="Projects" data-de="Projekte">Projects</a>
+          <a href="#experience" data-en="Experience" data-de="Erfahrung">Experience</a>
+          <a href="#contact" data-en="Contact" data-de="Kontakt">Contact</a>
         </nav>
-        <a class="button button-small" href="#contact">Hire Me</a>
+        <a class="button button-small" href="#contact" data-en="Hire Me" data-de="Kontakt aufnehmen">Hire Me</a>
+        <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language to German" data-en="Deutsch" data-de="English">Deutsch</button>
       </div>
     </header>
 
@@ -35,34 +39,39 @@
       <section class="hero">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Full Stack Developer</p>
+            <p class="eyebrow" data-en="Full Stack Developer" data-de="Full-Stack-Entwickler">Full Stack Developer</p>
             <h1>
-              I build responsive web apps and full-stack experiences people enjoy using.
+              <span data-en="I build responsive web apps and full-stack experiences people enjoy using." data-de="Ich entwickle responsive Web-Apps und Full-Stack-Lösungen, die Funktionalität mit einem großartigen Nutzererlebnis verbinden.">I build responsive web apps and full-stack experiences people enjoy using.</span>
             </h1>
-            <p class="lead">
+            <p class="lead" data-en="I’m Saleem Sultani, a developer focused on frontend and full-stack web applications using React, TypeScript, and backend APIs, with a focus on smooth, reliable user experiences." data-de="Ich bin Saleem Sultani und entwickle Frontend- und Full-Stack-Webanwendungen mit React, TypeScript und Backend-APIs. Mein Fokus liegt auf reibungslosen, zuverlässigen Benutzererlebnissen.">
               I’m Saleem Sultani, a developer focused on frontend and full-stack
               web applications using React, TypeScript, and backend APIs, with a
               focus on smooth, reliable user experiences.
             </p>
             <div class="hero-actions">
-              <a class="button" href="#projects">View Projects</a>
-              <a class="button button-secondary" href="#contact">Let’s Talk</a>
+              <a class="button" href="#projects" data-en="View Projects" data-de="Projekte ansehen">View Projects</a>
+              <a class="button button-secondary" href="#contact" data-en="Let’s Talk" data-de="Kontakt aufnehmen">Let’s Talk</a>
             </div>
-            <ul class="mini-stats" aria-label="Key stats">
-              <li><strong>3+</strong><span>Years experience</span></li>
-              <li><strong>10+</strong><span>Projects shipped</span></li>
-              <li><strong>100%</strong><span>Problem-solving</span></li>
+            <ul class="mini-stats" aria-label="Key stats" data-en-aria-label="Key stats" data-de-aria-label="Kennzahlen">
+              <li><strong>2+</strong><span data-en="Years experience" data-de="Jahre Erfahrung">Years experience</span></li>
+              <li><strong>10+</strong><span data-en="Projects shipped" data-de="Abgeschlossene Projekte">Projects shipped</span></li>
+              <li><strong>100%</strong><span data-en="Problem-solving" data-de="Lösungsorientiert">Problem-solving</span></li>
             </ul>
           </div>
 
-          <div class="hero-card" aria-label="Profile summary card">
+          <div class="hero-card" aria-label="Profile summary card" data-en-aria-label="Profile summary card" data-de-aria-label="Profilübersicht">
             <div class="profile-image">
-              <div class="avatar">SS</div>
+              <img
+                class="avatar"
+                src="saleem%20photo%20jobs.png"
+                alt="Saleem Sultani"
+                fetchpriority="high"
+              />
             </div>
             <div class="card-content">
-              <p class="label">Currently</p>
-              <h2>Software Engineer</h2>
-              <p>
+              <p class="label" data-en="Currently" data-de="Aktuell">Currently</p>
+              <h2 data-en="Software Engineer" data-de="Softwareentwickler">Software Engineer</h2>
+              <p data-en="Building user-focused web applications with strong frontend logic, backend integration, and scalable product thinking." data-de="Ich entwickle nutzerorientierte Webanwendungen mit durchdachtem Frontend, zuverlässiger Backend-Anbindung und skalierbarer Architektur.">
                 Building user-focused web applications with strong frontend logic,
                 backend integration, and scalable product thinking.
               </p>
@@ -80,18 +89,18 @@
       <section id="about" class="section">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">About me</p>
-            <h2>Building practical, polished experiences that solve real problems.</h2>
+            <p class="eyebrow" data-en="About me" data-de="Über mich">About me</p>
+            <h2 data-en="Building practical, polished experiences that solve real problems." data-de="Ich entwickle durchdachte digitale Lösungen für echte Herausforderungen.">Building practical, polished experiences that solve real problems.</h2>
           </div>
           <div class="about-grid">
             <div>
-              <p>
+              <p data-en="I develop frontend and full-stack web applications using React, TypeScript, and backend APIs, with a focus on smooth, reliable user experiences. My work combines product thinking with clean code, modular architecture, and practical engineering decisions." data-de="Ich entwickle Frontend- und Full-Stack-Webanwendungen mit React, TypeScript und Backend-APIs. Dabei verbinde ich nutzerzentriertes Produktdenken mit sauberem Code, modularer Architektur und pragmatischen technischen Entscheidungen.">
                 I develop frontend and full-stack web applications using React,
                 TypeScript, and backend APIs, with a focus on smooth, reliable user
                 experiences. My work combines product thinking with clean code,
                 modular architecture, and practical engineering decisions.
               </p>
-              <p>
+              <p data-en="From course platforms and geospatial tools to AI-driven security applications, I enjoy turning ideas into usable digital products that are responsive, maintainable, and built for real-world usage." data-de="Von Kursplattformen und Geodaten-Anwendungen bis hin zu KI-gestützten Sicherheitslösungen: Ich setze Ideen in responsive, wartbare und alltagstaugliche digitale Produkte um.">
                 From course platforms and geospatial tools to AI-driven security
                 applications, I enjoy turning ideas into usable digital products
                 that are responsive, maintainable, and built for real-world usage.
@@ -99,8 +108,8 @@
             </div>
             <div class="info-panel">
               <ul>
-                <li><span>Location</span><strong>Bangalore, India</strong></li>
-                <li><span>Email</span><strong>saleem.sultani.jobs@gmail.com</strong></li>
+                <li><span data-en="Location" data-de="Standort">Location</span><strong data-en="Chemnitz, Germany" data-de="Chemnitz, Deutschland">Chemnitz, Germany</strong></li>
+                <li><span data-en="Email" data-de="E-Mail">Email</span><strong>saleem.sultani.jobs@gmail.com</strong></li>
                 <li><span>GitHub</span><strong>github.com/saleemsultani</strong></li>
                 <li><span>LinkedIn</span><strong>linkedin.com/in/saleem-sultani</strong></li>
               </ul>
@@ -112,12 +121,12 @@
       <section id="skills" class="section muted">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">Skills</p>
-            <h2>Core technologies and tools I use to build and ship solutions.</h2>
+            <p class="eyebrow" data-en="Skills" data-de="Kenntnisse">Skills</p>
+            <h2 data-en="Core technologies and tools I use to build and ship solutions." data-de="Technologien und Werkzeuge, mit denen ich zuverlässige Produkte entwickle.">Core technologies and tools I use to build and ship solutions.</h2>
           </div>
           <div class="skills-grid">
             <article class="skill-card">
-              <h3>Frontend</h3>
+              <h3 data-en="Frontend" data-de="Frontend">Frontend</h3>
               <ul>
                 <li>JavaScript</li>
                 <li>TypeScript</li>
@@ -127,30 +136,30 @@
               </ul>
             </article>
             <article class="skill-card">
-              <h3>Backend</h3>
+              <h3 data-en="Backend" data-de="Backend">Backend</h3>
               <ul>
                 <li>Node.js</li>
                 <li>Express.js</li>
-                <li>REST APIs</li>
-                <li>JWT Authentication</li>
+                <li data-en="REST APIs" data-de="REST-Schnittstellen">REST APIs</li>
+                <li data-en="JWT Authentication" data-de="JWT-Authentifizierung">JWT Authentication</li>
               </ul>
             </article>
             <article class="skill-card">
-              <h3>Database</h3>
+              <h3 data-en="Database" data-de="Datenbank">Database</h3>
               <ul>
                 <li>MongoDB</li>
-                <li>Data Modeling</li>
-                <li>Data Integration</li>
-                <li>Backend Storage</li>
+                <li data-en="Data Modeling" data-de="Datenmodellierung">Data Modeling</li>
+                <li data-en="Data Integration" data-de="Datenintegration">Data Integration</li>
+                <li data-en="Backend Storage" data-de="Backend-Datenspeicherung">Backend Storage</li>
               </ul>
             </article>
             <article class="skill-card">
-              <h3>Workflow</h3>
+              <h3 data-en="Workflow" data-de="Arbeitsweise">Workflow</h3>
               <ul>
                 <li>GitHub</li>
                 <li>React Router</li>
-                <li>Responsive UI</li>
-                <li>Debugging & Testing</li>
+                <li data-en="Responsive UI" data-de="Responsive Benutzeroberflächen">Responsive UI</li>
+                <li data-en="Debugging & Testing" data-de="Fehlersuche & Tests">Debugging & Testing</li>
               </ul>
             </article>
           </div>
@@ -160,59 +169,59 @@
       <section id="projects" class="section">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">Projects</p>
-            <h2>Selected work that reflects my process, technical stack, and execution.</h2>
+            <p class="eyebrow" data-en="Projects" data-de="Projekte">Projects</p>
+            <h2 data-en="Selected work that reflects my process, technical stack, and execution." data-de="Ausgewählte Projekte und die Technologien dahinter.">Selected work that reflects my process, technical stack, and execution.</h2>
           </div>
 
           <div class="projects-grid">
             <article class="project-card">
-              <div class="project-badge">E-commerce</div>
-              <h3>E-commerce Shopping App</h3>
-              <p>
-                Developed a responsive e-commerce platform with product filtering,
-                shopping cart functionality, and authentication inspired by modern
-                storefront patterns.
+              <div class="project-badge" data-en="E-commerce" data-de="E-Commerce">E-commerce</div>
+              <h3 data-en="E-commerce Shopping App" data-de="E-Commerce-Shop">E-commerce Shopping App</h3>
+              <p data-en="An online store with product filters, customer accounts, and a shopping cart. Includes an admin dashboard for managing a catalog of more than 100 products." data-de="Ein Online-Shop mit Produktfiltern, Kundenkonten und Warenkorb. Über ein Admin-Dashboard lässt sich ein Katalog mit mehr als 100 Produkten verwalten.">
+                An online store with product filters, customer accounts, and a
+                shopping cart. Includes an admin dashboard for managing a catalog
+                of more than 100 products.
               </p>
               <ul>
-                <li>Responsive product catalog</li>
-                <li>Admin CRUD dashboard</li>
-                <li>Optimized mobile and desktop UX</li>
+                <li data-en="Responsive product catalog" data-de="Responsiver Produktkatalog">Responsive product catalog</li>
+                <li data-en="Admin CRUD dashboard" data-de="Admin-Dashboard zur Produktverwaltung">Admin CRUD dashboard</li>
+                <li data-en="Optimized mobile and desktop UX" data-de="Optimierte Nutzung auf Mobilgeräten und Desktop">Optimized mobile and desktop UX</li>
               </ul>
-              <a href="https://saleemsultani-my-react-app-deploy.vercel.app/" target="_blank" rel="noreferrer">Live demo →</a>
+              <a href="https://saleemsultani-my-react-app-deploy.vercel.app/" target="_blank" rel="noreferrer" data-en="Live demo →" data-de="Live-Demo →">Live demo →</a>
               <br />
-              <a href="https://github.com/saleemsultani/e-commerce-App" target="_blank" rel="noreferrer">GitHub →</a>
+              <a href="https://github.com/saleemsultani/e-commerce-App" target="_blank" rel="noreferrer" data-en="GitHub →" data-de="GitHub →">GitHub →</a>
             </article>
 
             <article class="project-card">
-              <div class="project-badge">Geospatial Platform</div>
+              <div class="project-badge" data-en="Geospatial Platform" data-de="Geodatenplattform">Geospatial Platform</div>
               <h3>DataBenken</h3>
-              <p>
-                Built a geospatial web platform for exploring location-based data,
-                using an interactive mapping interface and dynamic clustering for
-                dense site groupings.
+              <p data-en="An interactive map for exploring cultural heritage sites and other location-based data. Nearby sites form color-coded clusters, with JWT authentication for protected workflows." data-de="Eine interaktive Karte zur Erkundung von Kulturstätten und anderen standortbezogenen Daten. Nahegelegene Orte werden farblich gruppiert; geschützte Bereiche nutzen JWT-Authentifizierung.">
+                An interactive map for exploring cultural heritage sites and other
+                location-based data. Nearby sites form color-coded clusters, with
+                JWT authentication for protected workflows.
               </p>
               <ul>
-                <li>React Router + React</li>
-                <li>JWT-based authentication</li>
-                <li>Interactive map clustering</li>
+                <li data-en="React Router + React" data-de="React Router + React">React Router + React</li>
+                <li data-en="JWT-based authentication" data-de="JWT-Authentifizierung">JWT-based authentication</li>
+                <li data-en="Interactive map clustering" data-de="Interaktive Kartencluster">Interactive map clustering</li>
               </ul>
-              <a href="https://github.com/saleemsultani/CulturalSitesChemnitz" target="_blank" rel="noreferrer">GitHub →</a>
+              <a href="https://github.com/saleemsultani/CulturalSitesChemnitz" target="_blank" rel="noreferrer" data-en="GitHub →" data-de="GitHub →">GitHub →</a>
             </article>
 
             <article class="project-card">
-              <div class="project-badge">AI Security</div>
+              <div class="project-badge" data-en="AI Security" data-de="KI-Sicherheit">AI Security</div>
               <h3>PlanSpiel | 5iveBit</h3>
-              <p>
-                Collaborated in a 5-member team to build a desktop-based AI chatbot
-                for identifying and assessing potential security vulnerabilities in
-                real time.
+              <p data-en="A desktop cybersecurity assessment tool with an AI chatbot for identifying and reviewing potential vulnerabilities. Supports Gemini and Llama models with an Electron and React interface." data-de="Eine Desktop-Anwendung zur Cybersicherheitsanalyse mit KI-Chatbot, der potenzielle Schwachstellen erkennt und bewertet. Die Electron- und React-Oberfläche unterstützt Gemini- und Llama-Modelle.">
+                A desktop cybersecurity assessment tool with an AI chatbot for
+                identifying and reviewing potential vulnerabilities. Supports
+                Gemini and Llama models with an Electron and React interface.
               </p>
               <ul>
-                <li>Electron.js + React</li>
-                <li>Express + MongoDB</li>
-                <li>Gemini AI / Llama 3.2</li>
+                <li data-en="Electron.js + React" data-de="Electron.js + React">Electron.js + React</li>
+                <li data-en="Express + MongoDB" data-de="Express + MongoDB">Express + MongoDB</li>
+                <li data-en="Gemini AI / Llama 3.2" data-de="Gemini-KI / Llama 3.2">Gemini AI / Llama 3.2</li>
               </ul>
-              <a href="https://github.com/saleemsultani/5iveBit" target="_blank" rel="noreferrer">GitHub →</a>
+              <a href="https://github.com/saleemsultani/5iveBit" target="_blank" rel="noreferrer" data-en="GitHub →" data-de="GitHub →">GitHub →</a>
             </article>
           </div>
         </div>
@@ -221,44 +230,33 @@
       <section id="experience" class="section muted">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">Experience</p>
-            <h2>Experience building responsive, data-driven product features.</h2>
+            <p class="eyebrow" data-en="Experience" data-de="Erfahrung">Experience</p>
+            <h2 data-en="Experience building responsive, data-driven product features." data-de="Erfahrung mit responsiven, datenbasierten Produktfunktionen.">Experience building responsive, data-driven product features.</h2>
           </div>
 
           <div class="timeline">
             <article class="timeline-item">
               <div class="timeline-dot"></div>
               <div class="timeline-content">
-                <span class="date">Software Engineer</span>
+                <span class="date" data-en="Software Engineer" data-de="Softwareentwickler">Software Engineer</span>
                 <h3>SmartKnower</h3>
-                <p class="company">Bangalore, India</p>
+                <p class="company" data-en="Bangalore, India" data-de="Bangalore, Indien">Bangalore, India</p>
                 <p class="tech-stack">
-                  Tech stack: JavaScript, React.js, HTML, CSS, Material UI, MongoDB,
+                  <span data-en="Tech stack:" data-de="Technologien:">Tech stack:</span> JavaScript, React.js, HTML, CSS, Material UI, MongoDB,
                   Node.js, Express, GitHub
                 </p>
                 <ul class="experience-list">
-                  <li>
-                    Developed a responsive course enrollment platform using React.js,
-                    Node.js, and Material UI, focusing on a user-friendly interface
-                    and consistent application behavior.
+                  <li data-en="Built responsive course enrollment flows with React, Node.js, Express, MongoDB, and Material UI." data-de="Entwicklung responsiver Kursbuchungsabläufe mit React, Node.js, Express, MongoDB und Material UI.">
+                    Built responsive course enrollment flows with React, Node.js,
+                    Express, MongoDB, and Material UI.
                   </li>
-                  <li>
-                    Built reusable and modular React components to improve code
-                    maintainability, reduce duplication, and ensure consistency across
-                    the application.
+                  <li data-en="Created reusable React components and connected frontend workflows to REST APIs and MongoDB." data-de="Erstellung wiederverwendbarer React-Komponenten und Anbindung der Frontend-Abläufe an REST-APIs und MongoDB.">
+                    Created reusable React components and connected frontend
+                    workflows to REST APIs and MongoDB.
                   </li>
-                  <li>
-                    Developed and integrated full-stack features for a responsive
-                    course enrollment platform using React.js, Node.js, Express.js,
-                    REST APIs, and MongoDB.
-                  </li>
-                  <li>
-                    Integrated frontend features with backend services and MongoDB,
-                    handling data retrieval, submission, and storage for key workflows.
-                  </li>
-                  <li>
-                    Collaborated with the development team using Git-based version
-                    control and structured software development practices.
+                  <li data-en="Collaborated with the team on feature delivery, integration, and version control using GitHub." data-de="Zusammenarbeit im Team bei Feature-Umsetzung, Integration und Versionsverwaltung mit GitHub.">
+                    Collaborated with the team on feature delivery, integration, and
+                    version control using GitHub.
                   </li>
                 </ul>
               </div>
@@ -267,26 +265,49 @@
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="cta-panel">
-            <div>
-              <p class="eyebrow">Let’s connect</p>
-              <h2>Open to development opportunities and collaborations.</h2>
-            </div>
-            <a class="button" href="mailto:saleem.sultani.jobs@gmail.com">Get in touch</a>
+      <section id="contact" class="section">
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <p class="eyebrow" data-en="Let’s connect" data-de="Kontakt">Let’s connect</p>
+            <h2 data-en="Open to development opportunities and collaborations." data-de="Offen für neue Entwicklungsaufgaben und Zusammenarbeit.">Open to development opportunities and collaborations.</h2>
+            <p data-en="I’m available for frontend engineering, full-stack development, and product-focused web work. Send me a message about your project or opportunity." data-de="Ich bin offen für Frontend-Engineering, Full-Stack-Entwicklung und produktorientierte Webprojekte. Schreib mir gern zu deinem Vorhaben oder einer passenden Möglichkeit.">
+            </p>
           </div>
+
+          <form id="contactForm" class="contact-form">
+            <div class="honeypot" aria-hidden="true">
+              <label for="company" data-en="Company" data-de="Firma">Company</label>
+              <input id="company" name="company" type="text" tabindex="-1" autocomplete="off" />
+            </div>
+            <div class="field">
+              <label for="name" data-en="Name" data-de="Name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" data-en-placeholder="Your name" data-de-placeholder="Dein Name" required />
+            </div>
+
+            <div class="field">
+              <label for="email" data-en="Email" data-de="E-Mail">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" data-en-placeholder="you@example.com" data-de-placeholder="du@beispiel.de" required />
+            </div>
+
+            <div class="field">
+              <label for="message" data-en="Message" data-de="Nachricht">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity" data-en-placeholder="Tell me about your project or opportunity" data-de-placeholder="Erzähl mir von deinem Projekt oder deiner Anfrage" required></textarea>
+            </div>
+
+            <button class="button" type="submit" data-en="Send Message" data-de="Nachricht senden">Send Message</button>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
         </div>
       </section>
     </main>
 
-    <footer id="contact" class="site-footer">
+    <footer class="site-footer">
       <div class="container footer-content">
         <p>© <span id="year"></span> Saleem Sultani</p>
         <div class="socials">
           <a href="https://github.com/saleemsultani" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/saleem-sultani/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="mailto:saleem.sultani.jobs@gmail.com">Email</a>
+          <a href="mailto:saleem.sultani.jobs@gmail.com" data-en="Email" data-de="E-Mail">Email</a>
         </div>
       </div>
     </footer>

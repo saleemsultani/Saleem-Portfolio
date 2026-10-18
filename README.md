@@ -23,13 +23,22 @@ Edit the content in [index.html](index.html) to add:
 
 ## Preview locally
 
-From the project folder, run:
+The contact form uses a Vercel serverless function. Use Vercel's local development
+server instead of Python's static server to test form submissions:
 
 ```bash
-python -m http.server 8000
+npx vercel dev
 ```
 
-Then open http://localhost:8000
+Set the EmailJS environment variables in Vercel's project settings (or in a local
+`.env.local` file) before submitting the form. See [.env.example](.env.example)
+for the required variable names. Never commit `.env.local` or place the EmailJS
+private key in browser code.
+
+The EmailJS template should use `{{from_name}}`, `{{from_email}}`, `{{message}}`,
+and `{{to_email}}`; set Reply To to `{{from_email}}`.
+
+Deploying to Vercel makes the `/api/contact` endpoint available automatically.
 
 ## Files
 
