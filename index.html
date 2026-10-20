@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=responsive-1" />
+    <link rel="stylesheet" href="styles.css?v=responsive-2" />
   </head>
   <body>
     <header class="site-header">
@@ -31,7 +31,10 @@
           <a href="#contact" data-en="Contact" data-de="Kontakt">Contact</a>
         </nav>
         <a class="button button-small" href="#contact" data-en="Hire Me" data-de="Kontakt aufnehmen">Hire Me</a>
-        <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language to German" data-en="Deutsch" data-de="English">Deutsch</button>
+        <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language to German" aria-pressed="false">
+          <span class="language-flag flag-de" aria-hidden="true"></span>
+          <span class="language-code">DE</span>
+        </button>
       </div>
     </header>
 

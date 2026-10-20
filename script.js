@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const languageToggle = document.getElementById("languageToggle");
+  const languageCode = languageToggle?.querySelector(".language-code");
+  const languageFlag = languageToggle?.querySelector(".language-flag");
   const supportedLanguages = ["en", "de"];
   const savedLanguage = localStorage.getItem("portfolio-language");
   let currentLanguage = supportedLanguages.includes(savedLanguage) ? savedLanguage : "en";
@@ -24,6 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (description) description.content = description.dataset[`${language}Content`];
 
     if (languageToggle) {
+      const targetLanguage = language === "en" ? "de" : "gb";
+      languageCode.textContent = language === "en" ? "DE" : "EN";
+      languageFlag.className = `language-flag flag-${targetLanguage}`;
       languageToggle.setAttribute(
         "aria-label",
         language === "en" ? "Switch language to German" : "Sprache zu Englisch wechseln"
